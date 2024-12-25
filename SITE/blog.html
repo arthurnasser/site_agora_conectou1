@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agora Conectou</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+
+
+        /* Estilos para o submenu */
+        .servico {
+            position: relative;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            min-width: 200px; /* Largura do submenu */
+            width: 300px; /* Largura do submenu quando aberto */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 20px; /* Espaçamento interno do submenu */
+            z-index: 1;
+            left: 0;
+        }
+
+        .servico:hover .submenu {
+            display: block;
+        }
+
+        .submenu a {
+            color: white; /* Cor do texto do submenu */
+            padding: 10px 0; /* Espaçamento interno dos itens do submenu */
+            text-decoration: none;
+            display: block;
+        }
+
+        .submenu a:hover {
+            background-color: #9036CE; /* Cor de fundo do submenu ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li class="servico">
+                    <a href="#services">Serviços</a>
+                    <!-- Submenu de Serviços -->
+                    <ul class="submenu">
+                        <li><a href="sites.html">Criação de Sites</a></li>
+                        <li><a href="sociais.html">Gestão de Redes Sociais</a></li>
+                        <li><a href="ads.html">Publicidade em Ads</a></li>
+                        <li><a href="crm.html">Implementação de CRM</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+        <div class="cta">
+            <button onclick="window.location.href='contato.html';">Eu Quero</button>
+        </div>
+
+        <div>
+            <button class="hamburger">&#9776;</button>
+        </div>
+    </div>
+</header>
+<section class="container">
+    <article class="left-column">
+        <a href="post1.html">
+            <h2>Post 1</h2>
+            <img src="foto1.png" alt="Foto 1">
+        </a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor auctor libero at hendrerit. Ut hendrerit augue vel nibh mattis, sed tempor odio convallis.</p>
+    </article>
+    <article class="right-column">
+        <a href="post2.html">
+            <h2>Post 2</h2>
+            <img src="foto2.png" alt="Foto 2">
+        </a>
+        <p>Integer eget fermentum libero, ac blandit est. Vestibulum euismod tincidunt arcu id lacinia. Nam tempus enim nec efficitur volutpat.</p>
+    </article>
+</section>
+
+
+
+    <footer>
+        <p>&copy; 2024 Agora Conectou. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('.hamburger').addEventListener('click', function () {
+        document.querySelector('.navbar').classList.toggle('is-active');
+        document.querySelector('.navbar ul').classList.toggle('is-active'); // Correção: Adiciona essa linha para alternar a visibilidade do menu
+    });
+});
+</script>
+</body>
+</html>

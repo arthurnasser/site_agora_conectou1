@@ -1,0 +1,702 @@
+/* Estilos Base */
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* Background color set to white */
+    color: #1e1129; /* Adjusted text color for better visibility */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; /* Alterado o preenchimento interno para reduzir a altura do cabeçalho */
+}
+
+.logo img {
+    max-width: 15%; /* Diminuir o tamanho do logo */
+}
+
+.navbar ul {
+    list-style-type: block;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px; /* Diminuído o tamanho da fonte do menu */
+}
+/* Estilos para as seções */
+section, form {
+    padding: 20px;
+    margin: 20px;
+    background-color: #FFFFFF; /* Cor de fundo das seções */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #000000; /* Cor de fundo do rodapé */
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.8em;
+}
+/* Submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #3d195d;
+    padding: 5px;
+    left: 0;
+    top: 100%; /* Posiciona o submenu abaixo do item pai */
+    width: auto; /* Define a largura automaticamente com base no conteúdo */
+}
+
+.navbar ul li:hover .submenu {
+    display: block;
+    width: 100%; /* Ajusta a largura do submenu para ocupar toda a largura do pai */
+    left: 0; /* Alinha o submenu à esquerda do item pai */
+}
+
+.submenu li {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px 0;
+}
+
+.submenu a {
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    background-color: #e68a00; /* Cor laranja */
+}
+
+.submenu li:last-child {
+    margin-bottom: 0;
+}
+
+.submenu li a {
+    color: #fff;
+    font-size: 10px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.submenu li a:hover {
+    background-color: #e68a00; /* Cor laranja */
+}
+
+/* Estilos Adicionais */
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000; /* cor de fundo do cabeçalho */
+    color: #FFFFFF; /* cor do texto */
+    padding: 0px 0px; /* preenchimento interno reduzido para diminuir a altura do cabeçalho */
+    z-index: 1000; /* para garantir que o cabeçalho esteja acima de outros elementos */
+}
+
+.logo {
+    flex: 0 0 auto;
+    max-width: 20%;
+    margin-right: 10px;
+}
+
+.navbar ul li {
+    font-size: 14px;
+}
+
+.cta button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 10px; /* Reduzido o tamanho do botão */
+    font-size: 14px; /* Diminuído o tamanho da fonte do botão */
+    border-radius: 20px; /* Diminuído o raio da borda do botão */
+    cursor: pointer;
+}
+
+.cta button:hover {
+    background-color: #e68a00;
+}
+
+/* Outros estilos aqui */
+
+section, form {
+    padding: 20px;
+    margin: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4CAF50; /* Alterado para amarelo */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Alterado para um tom mais escuro de amarelo */
+}
+
+footer {
+    background-color: #000000; /* Alterado para roxo */
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.8em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icons img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+#boas-vindas img, #servicos img, .servico img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+.servico-container, .servicos-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.servico, .servicos-container .servico {
+    flex-basis: 30%; /* Ajuste conforme necessário */
+    text-align: left;
+}
+
+.servicos-container {
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Sombra */
+}
+
+.servico {
+    margin: 20px;
+    border: 1px solid #e0e0e0; /* Adiciona uma borda clara */
+    padding: 10px; /* Adiciona um preenchimento interno */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+    border-radius: 8px; /* Adiciona cantos arredondados */
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+    }
+
+    .navbar ul li {
+        display: block;
+    }
+
+    .navbar ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .container {
+        flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+    }
+
+    .logo, .cta, .hamburger {
+        flex-grow: 1; /* Allows each item to grow as needed, ensuring equal distribution */
+    }
+
+    .hamburger {
+        text-align: right; /* Aligns the hamburger menu to the right */
+        padding-right: 15px; /* Adds some padding for touch accessibility */
+    }
+
+    .logo img {
+        margin: auto; /* Centers the logo image */
+        max-width: 40%; /* Adjust logo size if necessary */
+    }
+
+    .cta {
+        text-align: center; /* Ensure the CTA button is centered */
+    }
+
+    .cta button {
+        width: auto; /* Adjust the width of the CTA button as needed */
+        padding: 10px 10px; /* Adjust padding for better visibility */
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .servico-container, .servicos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servico {
+        margin-bottom: 20px;
+    }
+
+    .servico, .servicos-container .servico {
+        flex-basis: calc(50% - 40px); /* Adjust for 2 columns on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .servico, .servicos-container .servico {
+        flex-basis: 30%; /* Adjust for 1 column on very small screens */
+    }
+}
+
+/* Estilos para layout de duas colunas */
+#destaque {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px; /* Adicione margem superior igual à altura do cabeçalho */
+    margin-bottom: 50px;
+}
+
+#destaque .coluna {
+    flex-basis: 48%; /* Largura de cada coluna */
+}
+
+#destaque .coluna img {
+    max-width: 100%; /* Para garantir que a imagem não ultrapasse a largura da coluna */
+}
+
+/* Oculta a coluna do banner em dispositivos móveis */
+@media screen and (max-width: 768px) {
+    #destaque .coluna:last-child {
+        display: none;
+    }
+    
+    #destaque .coluna:first-child {
+        text-align: center; /* Centraliza o texto da coluna da esquerda */
+        flex-basis: 100%; /* Largura total da coluna em dispositivos móveis */
+    }
+}
+
+/* Estilos para o submenu */
+.servico {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    min-width: 200px; /* Largura do submenu */
+    width: 300px; /* Largura do submenu quando aberto */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 20px; /* Espaçamento interno do submenu */
+    z-index: 1;
+    left: 0;
+}
+
+.servico:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    color: white; /* Cor do texto do submenu */
+    padding: 10px 0; /* Espaçamento interno dos itens do submenu */
+    text-decoration: none;
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: #9036CE; /* Cor de fundo do submenu ao passar o mouse */
+}
+
+/* Estilos adicionais para o botão do menu hambúrguer */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #ffffff; /* Cor do ícone do menu hambúrguer */
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Estilização do menu hambúrguer para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+        position: absolute;
+        background-color: #000000;
+        width: 100%;
+        text-align: center; /* Ajuste para centralizar os links do menu */
+        top: 60px; /* Ajuste conforme a altura do seu cabeçalho */
+    }
+    .navbar ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .navbar ul li a {
+        display: block;
+        padding: 10px;
+        color: #fff; /* Cor dos links do menu */
+    }
+
+    .navbar ul li:hover .submenu {
+        display: none; /* Evita que o submenu seja exibido automaticamente */
+    }   
+        /* Distribui os itens do menu em 3 colunas */
+    .navbar ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+    /* Ajustes adicionais para os itens do menu */
+    .navbar ul li {
+        margin: 0;
+        text-align: center;
+    }
+    /* Reorganiza a ordem dos elementos para mostrar o hambúrguer à esquerda */
+    .container {
+        flex-direction: row; /* Altera a direção do contêiner para linha */
+        justify-content: space-between; /* Coloca os elementos nas extremidades */
+        align-items: center; /* Alinha os elementos verticalmente */
+    }
+
+    .hamburger {
+        order: -1; /* Define a ordem para o hambúrguer aparecer primeiro */
+        margin-right: 10px; /* Adiciona espaço à direita do hambúrguer */
+    }
+
+    .cta {
+        order: 1; /* Define a ordem para o CTA aparecer depois do hambúrguer */
+    }
+
+    .logo {
+        display: none; /* Esconde o logo em telas móveis */
+    }
+
+
+
+}
+
+/* Estilos adicionais para quando o menu hambúrguer estiver ativo */
+.navbar.is-active ul {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 60px; /* Ajuste conforme a altura do seu header */
+    left: 0;
+    background-color: #3d195d; /* Cor de fundo do menu */
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+}
+
+/* Mudar a cor de fundo do item do submenu no hover */
+.navbar ul li .submenu li a:hover {
+    background-color: #e68a00; /* Cor laranja para hover */
+}
+.container {
+    display: flex;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Estilos para as imagens responsivas */
+img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    img {
+        max-width: 35%; /* Ajuste conforme necessário */
+    }
+}
+/* Estilos Base */
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff ; /* Cor de fundo da página */
+    color: #ffffff; /* Cor do texto */
+}
+
+.container,
+.navbar ul,
+.submenu,
+section,
+form,
+footer {
+    background-color: #fff ; /* Mudança para a cor do cabeçalho */
+    color: #000000; /* Cor do texto */
+}
+
+.servico a img {
+    max-width: 50px; /* Defina o tamanho máximo desejado */
+
+}
+/* Defina o espaçamento entre as linhas */
+body {
+    line-height: 1.8; /* Altere o valor conforme necessário para ajustar o espaçamento entre as linhas */
+}
+
+/* Estilos para o layout de duas colunas no footer */
+footer {
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex-basis: 48%; /* Largura de cada coluna */
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-icons img {
+    width: 60px; /* Tamanho dos ícones */
+    height: auto;
+}
+
+/* Estilos para layout de duas colunas */
+#destaque {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#destaque .coluna {
+    flex-basis: 48%; /* Largura de cada coluna */
+}
+
+#destaque .coluna img {
+    max-width: 100%; /* Para garantir que a imagem não ultrapasse a largura da coluna */
+}
+
+/* Oculta a coluna do banner em dispositivos móveis */
+@media screen and (max-width: 768px) {
+    #destaque .coluna:last-child {
+        display: none;
+    }
+    
+    #destaque .coluna:first-child {
+        text-align: center; /* Centraliza o texto da coluna da esquerda */
+        flex-basis: 100%; /* Largura total da coluna em dispositivos móveis */
+    }
+}
+
+/* Estilos para o submenu */
+.servico {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: right;
+    min-width: 500px; /* Largura do submenu */
+    width: 500px; /* Largura do submenu quando aberto */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 90px; /* Espaçamento interno do submenu */
+    z-index: 1;
+    left: 0;
+}
+
+.servico:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    color: white; /* Cor do texto do submenu */
+    padding: 10px 0; /* Espaçamento interno dos itens do submenu */
+    text-decoration: none;
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: #000000; /* Cor de fundo do submenu ao passar o mouse */
+}
+.highlight {
+    color: #ffad33; /* Amarelo */
+    /* Outros estilos opcionais */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background-color: #000; /* Cor de fundo do cabeçalho */
+    padding: 10px 90px;
+}
+
+.menu-container {
+    display: flex;
+    align-items: right;
+}
+
+#menuToggle {
+    cursor: pointer;
+    position: relative; /* Ajustado para relativo */
+}
+
+#menuToggle input {
+    display: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    background: #cdcdcd;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+#menuToggle input:checked ~ span:nth-child(1) {
+    transform: rotate(45deg) translate(-2px, -1px);
+}
+
+#menuToggle input:checked ~ span:nth-child(2) {
+    opacity: 0;
+}
+
+#menuToggle input:checked ~ span:nth-child(3) {
+    transform: rotate(-45deg) translate(-2px, 1px);
+}
+
+#menu {
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    position: absolute;
+    background-color: #ededed;
+    width: 100%;
+    left: 0;
+    top: 60px;
+}
+
+#menuToggle input:checked ~ #menu {
+    display: flex;
+}
+
+#menu a {
+     text-decoration: none;
+    color: #fff;
+    padding: 10px 20px; /* Ajuste conforme necessário */
+    display: block;
+    text-align: Right;
+}
+
+#menu li {
+    list-style: none;
+}
+
+.cta button {
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta button:hover {
+    background-color: #e68a00;
+play: flex; /* ou flex, dependendo de como você quer mostrar o menu */
+}
+#menu.is-active {
+    display: flex;
+    width: 80%;
+    min-width: 300px;
+    max-width: none;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+    background-color: #000000;
+}
+.cta button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 10px; /* Reduzido o tamanho do botão */
+    font-size: 14px; /* Diminuído o tamanho da fonte do botão */
+    border-radius: 20px; /* Diminuído o raio da borda do botão */
+    cursor: pointer;
+
+      .cta {
+        text-align: center; /* Ensure the CTA button is centered */
+    }
+
+    .cta button {
+        width: auto; /* Adjust the width of the CTA button as needed */
+        padding: 10px 10px; /* Adjust padding for better visibility */
+    }
+
